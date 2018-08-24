@@ -9,7 +9,7 @@
 	"scripts": {
 		"start": "node ./build/webpack.dev.js",
 		"build": "export NODE_ENV=prodution && node ./build/webpack.build.js",
-		"babel": "rm -rf lib && BABEL_ENV=prodution && babel scroll-watcher --out-dir lib --copy-files"
+		"babel": "rm -rf lib && BABEL_ENV=prodution && babel lazyload-img --out-dir lib --copy-files"
 	},
 	"repository": {
 		"type": "git",

@@ -5,6 +5,7 @@ export default class ScrollWatcher {
 	static item = Item
 	
 	static init (options) {
+		options.initEmit = true
 		Watcher.init(options)
 	}
 }

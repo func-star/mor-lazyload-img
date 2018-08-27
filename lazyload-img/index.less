@@ -1,55 +1,67 @@
 .mor-lazyload-img {
 	overflow: hidden;
 	display: inline-block;
+	position: relative;
 	img.preview {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
 		filter: blur(2vw);
 		transform: scale(1.05);
 	}
 	img.origin {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		filter: none;
 		animation: origin 1s ease-out;
 	}
 }
 
 @-moz-keyframes origin {
 	0% {
+		filter: blur(2vw);
 		transform: scale(1.1);
-		opacity: 0;
 	}
 	100% {
 		transform: scale(1);
-		opacity: 1;
+		filter: none;
 	}
 }
 
 @-webkit-keyframes origin {
 	0% {
+		filter: blur(2vw);
 		transform: scale(1.1);
-		opacity: 0;
 	}
 	100% {
 		transform: scale(1);
-		opacity: 1;
+		filter: none;
 	}
 }
 
 @-o-keyframes origin {
 	0% {
+		filter: blur(2vw);
 		transform: scale(1.1);
-		opacity: 0;
 	}
 	100% {
 		transform: scale(1);
-		opacity: 1;
+		filter: none;
 	}
 }
 
 @keyframes origin {
 	0% {
+		filter: blur(2vw);
 		transform: scale(1.1);
-		opacity: 0;
 	}
 	100% {
 		transform: scale(1);
-		opacity: 1;
+		filter: none;
 	}
 }

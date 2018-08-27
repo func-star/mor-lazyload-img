@@ -17,7 +17,7 @@ export default class LazyloadItem extends Component {
 			return
 		}
 		this.img.src = actualscr
-		Util.removeClass(this.img, 'preview')
+		// Util.removeClass(this.img, 'preview')
 		Util.addClass(this.img, 'origin')
 	}
 	

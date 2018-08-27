@@ -1,7 +1,7 @@
 {
 	"name": "mor-lazyload-img",
 	"version": "0.3.0",
-	"description": "Mona系列-React图片懒加载",
+	"description": "Mona系列 - React图片懒加载",
 	"main": "./lib/index.js",
 	"files": [
 		"lib"

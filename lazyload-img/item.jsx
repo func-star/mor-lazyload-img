@@ -42,7 +42,11 @@ export default class LazyloadItem extends Component {
 		}
 		
 		return (
-			<WatcherItem onWatcher={this.changeUrl.bind(this)} style={wrapStyle} className={wrapKlass}>
+			<WatcherItem
+				monaId="mor_lazyload_img_all"
+				onWatcher={this.changeUrl.bind(this)}
+				style={wrapStyle}
+				className={wrapKlass}>
 				<img className={imgKlass} src={src} ref="img" {...props} {...props} />
 			</WatcherItem>
 		)

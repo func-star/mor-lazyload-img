@@ -6,6 +6,7 @@ export default class ScrollWatcher {
 	
 	static init (options) {
 		options.initEmit = true
-		Watcher.init(options)
+		options.monaId="mor_lazyload_img_all"
+		new Watcher(options)
 	}
 }

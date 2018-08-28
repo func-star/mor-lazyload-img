@@ -4,7 +4,7 @@
 
 [![npm](https://img.shields.io/npm/v/mor-lazyload-img.svg?style=flat-square)](https://www.npmjs.com/package/mor-lazyload-img) [![npm](https://img.shields.io/npm/dt/mor-lazyload-img.svg?style=flat-square)](https://www.npmjs.com/package/mor-lazyload-img)
 
-[demo页面](https://func-star.github.io/mor-lazyload-img//)
+[demo页面](https://func-star.github.io/mor-lazyload-img/)
 
 
 ## 依赖
@@ -24,8 +24,7 @@ export default class Demo extends Component {
 	componentDidMount () {
 		LazyloadImg.init({
 			wrap: findDOMNode(this.refs.wrap)
-			// bottomEmit: 100,
-			// initEmit: true
+			// bottomEmit: -100,
 		})
 	}
 

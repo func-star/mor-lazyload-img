@@ -8,8 +8,8 @@
 		top: 0;
 		width: 100%;
 		height: 100%;
-		filter: blur(2vw);
-		transform: scale(1.05);
+		filter: blur(1vw);
+		transform: scale(1.1);
 	}
 	img.origin {
 		position: absolute;
@@ -18,13 +18,14 @@
 		width: 100%;
 		height: 100%;
 		filter: none;
-		animation: origin 1s ease-out;
+		transform: scale(1);
+		animation: origin 0.8s ease-out;
 	}
 }
 
 @-moz-keyframes origin {
 	0% {
-		filter: blur(2vw);
+		filter: blur(1vw);
 		transform: scale(1.1);
 	}
 	100% {
@@ -35,7 +36,7 @@
 
 @-webkit-keyframes origin {
 	0% {
-		filter: blur(2vw);
+		filter: blur(1vw);
 		transform: scale(1.1);
 	}
 	100% {
@@ -46,7 +47,7 @@
 
 @-o-keyframes origin {
 	0% {
-		filter: blur(2vw);
+		filter: blur(1vw);
 		transform: scale(1.1);
 	}
 	100% {
@@ -57,7 +58,7 @@
 
 @keyframes origin {
 	0% {
-		filter: blur(2vw);
+		filter: blur(1vw);
 		transform: scale(1.1);
 	}
 	100% {

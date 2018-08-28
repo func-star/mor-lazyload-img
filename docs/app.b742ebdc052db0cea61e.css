@@ -1,39 +1,58 @@
 .mor-lazyload-img {
   overflow: hidden;
   display: inline-block;
+  position: relative;
 }
 .mor-lazyload-img img.preview {
-  -webkit-filter: blur(2vw);
-          filter: blur(2vw);
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-filter: blur(1vw);
+          filter: blur(1vw);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 .mor-lazyload-img img.origin {
-  -webkit-animation: origin 1s ease-out;
-          animation: origin 1s ease-out;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-filter: none;
+          filter: none;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-animation: origin 0.8s ease-out;
+          animation: origin 0.8s ease-out;
 }
 @-webkit-keyframes origin {
   0% {
+    -webkit-filter: blur(1vw);
+            filter: blur(1vw);
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
-    opacity: 0;
   }
   100% {
     -webkit-transform: scale(1);
             transform: scale(1);
-    opacity: 1;
+    -webkit-filter: none;
+            filter: none;
   }
 }
 @keyframes origin {
   0% {
+    -webkit-filter: blur(1vw);
+            filter: blur(1vw);
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
-    opacity: 0;
   }
   100% {
     -webkit-transform: scale(1);
             transform: scale(1);
-    opacity: 1;
+    -webkit-filter: none;
+            filter: none;
   }
 }
 html,
@@ -491,10 +510,32 @@ input[type="number"] {
 .page-nav-right .feedback .iconfont {
   font-size: 28px;
 }
-.picture,
-.picture-wrap {
-  width: 290px;
-  height: 180px;
+p {
+  margin: 15px 0;
+}
+.picture-wrap-1 {
+  width: 700px;
+  height: 654px;
+}
+.picture-wrap-2 {
+  width: 700px;
+  height: 531px;
+}
+.picture-wrap-3 {
+  width: 700px;
+  height: 654px;
+}
+.picture-wrap-4 {
+  width: 700px;
+  height: 756px;
+}
+.picture-wrap-5 {
+  width: 700px;
+  height: 1162px;
+}
+.picture-wrap-6 {
+  width: 700px;
+  height: 443px;
 }
 #appWrapper {
   height: 100%;
